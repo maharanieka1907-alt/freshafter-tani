@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352b;
+    background: #fafbf8;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #e6ebe4;
+}
+
+.navbar {
+    max-width: 1150px;
+    height: 72px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #315c3b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-menu a {
+    color: #4d5b50;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-menu a:hover {
+    color: #5f8f61;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            110deg,
+            #315c3b 0%,
+            #527b50 55%,
+            #a8bf8f 100%
+        );
+}
+
+.hero-content {
+    width: 1150px;
+    max-width: 90%;
+    margin: auto;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 550px;
+    font-size: 17px;
+    color: #edf5ed;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 24px;
+
+    background: white;
+    color: #315c3b;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: #edf4eb;
+}
+
+.hero-fruit {
+    position: absolute;
+    right: 8%;
+    bottom: -45px;
+
+    font-size: 300px;
+    opacity: 0.18;
+    transform: rotate(-12deg);
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading.center {
+    text-align: center;
+}
+
+.section-label {
+    color: #679267;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-family: Georgia, serif;
+    color: #263b2c;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro-text {
+    max-width: 800px;
+    margin-left: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.intro-text p {
+    color: #68736b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   PROBLEM
+========================= */
+
+.problem-section {
+    background: #eef4eb;
+    padding: 100px 25px;
+}
+
+.problem-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.problem-card {
+    position: relative;
+    background: white;
+    padding: 32px 25px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.problem-card:hover {
+    transform: translateY(-7px);
+}
+
+.problem-card > span {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+
+    font-size: 12px;
+    color: #a1afa2;
+}
+
+.problem-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.problem-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.problem-card p {
+    color: #737c75;
+    font-size: 13px;
+}
+
+
+/* =========================
+   FRUIT CARDS
+========================= */
+
+.fruit-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.fruit-card {
+    background: white;
+    border: 1px solid #e4e9e2;
+    border-radius: 12px;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.fruit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(42, 70, 46, 0.10);
+}
+
+.fruit-image {
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 90px;
+}
+
+.banana {
+    background: #fff6cf;
+}
+
+.mango {
+    background: #fff0cf;
+}
+
+.orange {
+    background: #ffe5c7;
+}
+
+.apple {
+    background: #f9dddd;
+}
+
+.fruit-info {
+    padding: 23px;
+}
+
+.fruit-info h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.fruit-info p {
+    color: #737c75;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.tag {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    background: #edf4eb;
+    color: #527d56;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TIPS
+========================= */
+
+.tips-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 25px;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 90px;
+}
+
+.tips-list {
+    border-top: 1px solid #dfe5df;
+}
+
+.tip-item {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #dfe5df;
+}
+
+.tip-number {
+    font-family: Georgia, serif;
+    color: #679267;
+    font-size: 20px;
+}
+
+.tip-item h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.tip-item p {
+    color: #727a74;
+    font-size: 13px;
+}
+
+
+/* =========================
+   FACT
+========================= */
+
+.fact-section {
+    max-width: 1100px;
+    margin: 30px auto 100px;
+
+    padding: 70px;
+
+    border-radius: 15px;
+
+    background: #315c3b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.fact-content {
+    max-width: 650px;
+}
+
+.fact-content .section-label {
+    color: #bcd4b9;
+}
+
+.fact-content h2 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    line-height: 1.15;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.fact-content > p:last-child {
+    color: #dbe8dc;
+    font-size: 15px;
+}
+
+.fact-symbol {
+    font-size: 170px;
+    opacity: 0.18;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #203d28;
+    color: white;
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #c9d7ca;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+footer small {
+    color: #91a495;
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .problem-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fruit-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tips-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .intro-text {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        padding: 18px 15px;
+
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 570px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-fruit {
+        font-size: 190px;
+        right: 2%;
+    }
+
+    .section-heading h2 {
+        font-size: 33px;
+    }
+
+    .intro-text {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .problem-container {
+        grid-template-columns: 1fr;
+    }
+
+    .fruit-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .fact-section {
+        margin: 20px;
+        padding: 45px 30px;
+    }
+
+    .fact-content h2 {
+        font-size: 35px;
+    }
+
+    .fact-symbol {
+        display: none;
+    }
+}
